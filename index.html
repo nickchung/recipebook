@@ -17,20 +17,20 @@
 
     <link rel="stylesheet" href="src/css/app.css">
 </head>
-<body>
-<my-app>Loading...</my-app>
+    <body>
+    <my-app>Loading</my-app>
 
-<script>
-    System.config({
-        packages: {
-            app: {
-                format: 'register',
-                defaultExtension: 'js'
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
             }
-        }
-    });
-    System.import('app/boot')
-            .then(null, console.error.bind(console));
-</script>
+        });
+        System.import('app/boot')
+                .then(null, console.error.bind(console));
+    </script>
 </body>
 </html>
